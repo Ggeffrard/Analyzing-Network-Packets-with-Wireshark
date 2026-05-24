@@ -100,6 +100,7 @@ Step 11: Click the X icon to close the detailed packet inspection window.
 Step 12: Click the X Clear display filter icon in the Wireshark filter bar to clear the MAC address filter.
 <img width="1862" height="718" alt="Screenshot 2026-05-24 164404" src="https://github.com/user-attachments/assets/2a37ba61-bcb9-43a8-a76b-cd677869d8f3" />
 
+# Use filters to explore DNS packets
 
 
 
