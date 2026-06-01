@@ -187,7 +187,13 @@ Quite a few packets were created when the user accessed the web page http://open
 <img width="1919" height="910" alt="Screenshot 2026-06-01 120655" src="https://github.com/user-attachments/assets/be32b1a7-083d-44c4-9ca3-06fda8b3c4b7" />
 This filters to packets containing web requests made with the curl command in this sample packet capture file.
 
+# Conclusion
 
+In this project, I used Wireshark to capture and analyze live network traffic in order to better understand how devices communicate across a network. Throughout the investigation, I examined multiple protocols including DNS, TCP, and HTTP/HTTPS traffic while identifying source and destination IP addresses, packet details, and connection behavior.
+
+By analyzing packet captures, I gained hands-on experience filtering traffic, interpreting protocol data, and recognizing normal network activity patterns. Understanding normal network behavior is an essential skill in cybersecurity because it helps security analysts identify suspicious traffic, unauthorized connections, and potential security threats.
+
+This project strengthened my knowledge of network communications, packet analysis, and traffic monitoring while improving my ability to investigate and interpret network data using industry-standard tools such as Wireshark. The skills demonstrated in this lab are directly applicable to cybersecurity roles involving network monitoring, threat detection, incident response, and security analysis.
 
 
 
