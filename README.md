@@ -138,6 +138,36 @@ The Answers data includes the name that was queried (opensource.google.com) and 
 ### Step 11: Click the X Clear display filter icon in the Wireshark filter bar to clear the filter.
 <img width="1919" height="918" alt="Screenshot 2026-06-01 113239" src="https://github.com/user-attachments/assets/4bd1cefd-a1fe-401f-b812-b2323a173ce5" />
 
+# Use filters to explore TCP packets
+
+### Step 1: Enter the following filter to select TCP port 80 traffic. TCP port 80 is the default port that is associated with web traffic:
+tcp.port == 80
+<img width="1919" height="911" alt="Screenshot 2026-06-01 120010" src="https://github.com/user-attachments/assets/4c628160-5bc9-4610-a74f-03b54fe030c0" />
+
+### Step 2: Press ENTER or click the Apply display filter icon in the filter text box.
+<img width="1913" height="913" alt="Screenshot 2026-06-01 120045" src="https://github.com/user-attachments/assets/ad0e08f7-7c07-47be-92c2-4bdf73032fd5" />
+Quite a few packets were created when the user accessed the web page http://opensource.google.com.
+
+### Step 3: Double-click the first packet in the list. The Destination IP address of this packet is 169.254.169.254.
+<img width="1525" height="758" alt="Screenshot 2026-06-01 120515" src="https://github.com/user-attachments/assets/7848563c-a2ba-4d3c-bb7d-8eac6869f37e" />
+
+### Step 4: Click the X icon to close the detailed packet inspection window.
+<img width="1525" height="758" alt="Screenshot 2026-06-01 120515" src="https://github.com/user-attachments/assets/676d7568-6846-4ce1-a871-ce0c74a80b46" />
+
+### Step 5: Click the X Clear display filter icon in the Wireshark filter bar to clear the filter.
+<img width="1905" height="783" alt="Screenshot 2026-06-01 120547" src="https://github.com/user-attachments/assets/0d075a7b-c118-4382-ab23-4fc8d8cdb30a" />
+
+### Step 6: Enter the following filter to select TCP packet data that contains specific text data: tcp contains "curl"
+<img width="1916" height="916" alt="Screenshot 2026-06-01 121715" src="https://github.com/user-attachments/assets/76f48ede-54d1-4ae2-81be-9f947b81e35b" />
+
+### Step 7: Press ENTER or click the Apply display filter icon in the filter text box.
+<img width="1919" height="910" alt="Screenshot 2026-06-01 120655" src="https://github.com/user-attachments/assets/be32b1a7-083d-44c4-9ca3-06fda8b3c4b7" />
+This filters to packets containing web requests made with the curl command in this sample packet capture file.
+
+
+
+
+
 
 
 
