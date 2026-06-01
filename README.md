@@ -28,29 +28,44 @@ The packet capture file has the Wireshark packet capture file icon, which shows 
 ### Step 2: Press ENTER or click the Apply display filter icon in the filter text box.
 <img width="956" height="686" alt="Screenshot 2026-05-13 132847" src="https://github.com/user-attachments/assets/0c7d4f6d-e179-4cfa-9918-e4caf1e51eab" />
 
+The list of packets displayed is now significantly reduced and contains only packets where either the source or the destination IP address matches the address you entered. Now only two packet colors are used: light pink for ICMP protocol packets and light green for TCP (and HTTP, which is a subset of TCP) packets.
+
 ### Step 3: Double-click the first packet that lists TCP as the protocol.
+This opens a packet details pane window:
 <img width="779" height="754" alt="Screenshot 2026-05-13 132956" src="https://github.com/user-attachments/assets/18024575-897b-4a6a-b1ef-2d9f6e91f101" />
+
+The upper section of this window contains subtrees where Wireshark will provide you with an analysis of the various parts of the network packet. The lower section of the window contains the raw packet data displayed in hexadecimal and ASCII text. There is also placeholder text for fields where the character data does not apply, as indicated by the dot (“.”).
 
 ### Step 4: Double-click the first subtree in the upper section. This starts with the word Frame.
 <img width="777" height="753" alt="Screenshot 2026-05-13 133056" src="https://github.com/user-attachments/assets/77bb4725-3610-4a06-9595-18a68aeb4399" />
 
+This provides you with details about the overall network packet, or frame, including the frame length and the arrival time of the packet. At this level, you’re viewing information about the entire packet of data.
+
 ### Step 5: Double-click Frame again to collapse the subtree and then double-click the Ethernet II subtree.
 <img width="777" height="747" alt="Screenshot 2026-05-13 133203" src="https://github.com/user-attachments/assets/991f1f6e-3357-4b6d-859a-307a057c48cb" />
-
 <img width="779" height="750" alt="Screenshot 2026-05-13 133304" src="https://github.com/user-attachments/assets/0f4c9df9-49c8-458c-b95b-49c1abb3014f" />
+
+This item contains details about the packet at the Ethernet level, including the source and destination MAC addresses and the type of internal protocol that the Ethernet packet contains.
 
 ### Step 6: Double-click Ethernet II again to collapse that subtree and then double-click the Internet Protocol Version 4 subtree.
 <img width="779" height="747" alt="Screenshot 2026-05-13 133339" src="https://github.com/user-attachments/assets/4f75dd04-f9e9-4609-b59b-2a5a262c5218" />
 
 <img width="776" height="747" alt="Screenshot 2026-05-13 133411" src="https://github.com/user-attachments/assets/879569a9-643b-48d8-84e1-c0d2ee10e55b" />
 
+This provides packet data about the Internet Protocol (IP) data contained in the Ethernet packet. It contains information such as the source and destination IP addresses and the Internal Protocol (for example, TCP or UDP), which is carried inside the IP packet.The source and destination IP addresses shown here match the source and destination IP addresses in the summary display for this packet in the main Wireshark window.
+
 ### Step 7: Double-click Internet Protocol Version 4 again to collapse that subtree and then double-click the Transmission Control Protocol subtree.
 <img width="781" height="749" alt="Screenshot 2026-05-13 133519" src="https://github.com/user-attachments/assets/126b0767-aa2b-44bb-a835-4cdefd8341da" />
 
 <img width="777" height="750" alt="Screenshot 2026-05-13 133604" src="https://github.com/user-attachments/assets/eb5dcbcd-1d45-4df5-861e-5fcf6593b25e" />
 
+This provides detailed information about the TCP packet, including the source and destination TCP ports, the TCP sequence numbers, and the TCP flags.
+The source port and destination port listed here match the source and destination ports in the info column of the summary display for this packet in the list of all of the packets in the main Wireshark window.
+
 ### Step 8: In the Transmission Control Protocol subtree, scroll down and double-click Flags.
 <img width="774" height="746" alt="Screenshot 2026-05-13 133741" src="https://github.com/user-attachments/assets/b2e5aa7b-41a8-41a8-ac7d-bae590d2fc48" />
+
+This provides a detailed view of the TCP flags set in this packet.
 
 ### Step 9: Click the X icon to close the detailed packet inspection window.
 <img width="788" height="737" alt="Screenshot 2026-05-13 133829" src="https://github.com/user-attachments/assets/fcdd9a9f-3fdc-4904-8990-fc5a677535be" />
@@ -58,6 +73,8 @@ The packet capture file has the Wireshark packet capture file icon, which shows 
 ### Step 10: Click the X Clear display filter icon in the Wireshark filter bar to clear the IP address filter.
 
 <img width="892" height="516" alt="Screenshot 2026-05-13 133907" src="https://github.com/user-attachments/assets/1ef27f5c-2fcb-4e07-96f9-098034766c9f" />
+
+All the packets have returned to the display. If you ever accidentally close the Wireshark application, you can reopen it by double-clicking the sample file on the desktop.
 
 # Use filters to select packets
 
@@ -91,10 +108,14 @@ A filtered list is returned that contains only packets that were sent to 142.250
 ### Step 9: Double-click the Ethernet II subtree if it is not already open.
 <img width="1534" height="745" alt="Screenshot 2026-05-24 163854" src="https://github.com/user-attachments/assets/24f1f3e0-e60c-44b2-99db-cd3d01faa720" />
 
+The MAC address you specified in the filter is listed as either the source or destination address in the expanded Ethernet II subtree.
+
 ### Step 10: Double-click the Ethernet II subtree to close it. Double-click the Internet Protocol Version 4 subtree to expand it and scroll down until the Time to Live and Protocol fields appear.
 <img width="1534" height="749" alt="Screenshot 2026-05-24 164012" src="https://github.com/user-attachments/assets/c27cd6fb-48f2-43de-b998-2c2df86f4df1" />
 <img width="1535" height="750" alt="Screenshot 2026-05-24 164123" src="https://github.com/user-attachments/assets/1eca4329-a1c0-43a6-b59e-bb4f0f0069c5" />
 <img width="1512" height="215" alt="Screenshot 2026-05-24 164207" src="https://github.com/user-attachments/assets/57550330-ff7a-425d-8f0d-817d415c4672" />
+
+The Protocol field in the Internet Protocol Version 4 subtree indicates which IP internal protocol is contained in the packet.
 
 ### Step 11: Click the X icon to close the detailed packet inspection window.
 <img width="1540" height="751" alt="Screenshot 2026-05-24 164306" src="https://github.com/user-attachments/assets/94857aa9-64e4-4966-81fa-67b7c1789f82" />
