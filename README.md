@@ -94,13 +94,56 @@ A filtered list is returned that contains only packets that were sent to 142.250
 <img width="1535" height="750" alt="Screenshot 2026-05-24 164123" src="https://github.com/user-attachments/assets/1eca4329-a1c0-43a6-b59e-bb4f0f0069c5" />
 <img width="1512" height="215" alt="Screenshot 2026-05-24 164207" src="https://github.com/user-attachments/assets/57550330-ff7a-425d-8f0d-817d415c4672" />
 
-Step 11: Click the X icon to close the detailed packet inspection window.
+### Step 11: Click the X icon to close the detailed packet inspection window.
 <img width="1540" height="751" alt="Screenshot 2026-05-24 164306" src="https://github.com/user-attachments/assets/94857aa9-64e4-4966-81fa-67b7c1789f82" />
 
-Step 12: Click the X Clear display filter icon in the Wireshark filter bar to clear the MAC address filter.
+### Step 12: Click the X Clear display filter icon in the Wireshark filter bar to clear the MAC address filter.
 <img width="1862" height="718" alt="Screenshot 2026-05-24 164404" src="https://github.com/user-attachments/assets/2a37ba61-bcb9-43a8-a76b-cd677869d8f3" />
 
 # Use filters to explore DNS packets
+
+### Step 1: Enter the following filter to select UDP port 53 traffic. DNS traffic uses UDP port 53, so this will list traffic related to DNS queries and responses only. Enter this into the Apply a display filter... text box immediately above the list of packets: udp.port == 53
+<img width="1917" height="910" alt="Screenshot 2026-06-01 112232" src="https://github.com/user-attachments/assets/358fe969-4f39-4c40-b1eb-187966eeefce" />
+
+### Step 2: Press ENTER or click the Apply display filter icon in the filter text box.
+<img width="1919" height="912" alt="Screenshot 2026-06-01 112309" src="https://github.com/user-attachments/assets/7bdc30cd-c951-4d24-9be0-8728580c35d2" />
+
+### Step 3: Double-click the first packet in the list to open the detailed packet window, which is Packet 9.
+<img width="1541" height="748" alt="Screenshot 2026-06-01 112348" src="https://github.com/user-attachments/assets/4d185c28-9956-428e-a456-fb5112711b33" />
+
+### Step 4: Scroll down and double-click the Domain Name System (query) subtree to expand it.
+<img width="1535" height="749" alt="Screenshot 2026-06-01 112431" src="https://github.com/user-attachments/assets/cc56cf81-ae23-460b-b910-bb9098593b44" />
+
+### Step 5: Scroll down and double-click Queries.Scroll down and double-click Queries.
+<img width="1498" height="496" alt="Screenshot 2026-06-01 112513" src="https://github.com/user-attachments/assets/1218162c-e3eb-47e1-974c-34ea21f09fef" />
+You’ll notice that the name of the website that was queried is opensource.google.com.
+
+### Step 6: Click the X icon to close the detailed packet inspection window.
+<img width="1550" height="745" alt="Screenshot 2026-06-01 112657" src="https://github.com/user-attachments/assets/07700ccd-35f1-4d1d-96cc-fd65ded5d15d" />
+
+### Step 7: Double-click the fourth packet in the list to open the detailed packet window, which is Packet 12.
+<img width="1896" height="367" alt="Screenshot 2026-06-01 112808" src="https://github.com/user-attachments/assets/65417414-76c4-44af-8a99-d3739261fbde" />
+<img width="1532" height="750" alt="Screenshot 2026-06-01 112909" src="https://github.com/user-attachments/assets/706dbfb4-1ee0-4c22-8d8f-05c4e3811db7" />
+
+### Step 8: Scroll down and double-click the Domain Name System (query) subtree to expand it.
+<img width="1510" height="799" alt="Screenshot 2026-06-01 113011" src="https://github.com/user-attachments/assets/249ccf74-19be-4249-8bd4-8bce0884f561" />
+
+### Step 9: Scroll down and double-click Answers, which is in the Domain Name System (query) subtree.
+<img width="1532" height="746" alt="Screenshot 2026-06-01 113106" src="https://github.com/user-attachments/assets/cb9473c6-cd14-48c8-9d3a-82d800832b61" />
+The Answers data includes the name that was queried (opensource.google.com) and the addresses that are associated with that name.
+
+### Step 10: Click the X icon to close the detailed packet inspection window.
+<img width="1559" height="751" alt="Screenshot 2026-06-01 113207" src="https://github.com/user-attachments/assets/5e083ba2-e097-4f4c-8cdd-dfb39d974eff" />
+
+### Step 11: Click the X Clear display filter icon in the Wireshark filter bar to clear the filter.
+<img width="1919" height="918" alt="Screenshot 2026-06-01 113239" src="https://github.com/user-attachments/assets/4bd1cefd-a1fe-401f-b812-b2323a173ce5" />
+
+
+
+
+
+
+
 
 
 
