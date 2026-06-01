@@ -13,6 +13,7 @@ This project demonstrates how to capture and analyze network traffic using Wires
 
 ### Step 1: To open the packet capture file, double-click the sample file on the Windows desktop. This will start Wireshark.
 <img width="680" height="765" alt="Screenshot 2026-05-13 132159" src="https://github.com/user-attachments/assets/ebd36a54-d0bb-407c-a4d1-e61fc19c1bdc" />
+
 The packet capture file has the Wireshark packet capture file icon, which shows a shark's fin swimming above three rows of binary digits. The packet capture file has a .pcap file extension that is hidden by default by Windows Explorer and on the desktop view.
 
 ### Step 2: Scroll down the packet list until a packet is listed where the info column starts with the words 'Echo (ping) request'.
