@@ -1,5 +1,10 @@
 # Analyzing-Network-Packets-with-Wireshark
+
+## Project Overview
 This project demonstrates how to capture and analyze network traffic using Wireshark during a simulated security investigation.
+
+## Project Objective
+The objective of this project was to use Wireshark to capture and analyze network traffic in a controlled environment. By examining packets and applying display filters, I aimed to identify different network protocols, inspect packet details, and gain a better understanding of how devices communicate across a network. This project also helped develop foundational skills used in network monitoring, troubleshooting, and cybersecurity investigations.
 
 ## Technologies Used
 - Wireshark
@@ -186,6 +191,24 @@ Quite a few packets were created when the user accessed the web page http://open
 ### Step 7: Press ENTER or click the Apply display filter icon in the filter text box.
 <img width="1919" height="910" alt="Screenshot 2026-06-01 120655" src="https://github.com/user-attachments/assets/be32b1a7-083d-44c4-9ca3-06fda8b3c4b7" />
 This filters to packets containing web requests made with the curl command in this sample packet capture file.
+
+# Findings
+
+During the analysis, I successfully captured and examined live network traffic using Wireshark. By applying display filters, I was able to isolate and analyze DNS, TCP, and ICMP traffic. The packet captures revealed how devices communicate across a network through requests, responses, and protocol-specific exchanges.
+The investigation also provided insight into source and destination IP addresses, MAC addresses, port numbers, and protocol behavior. Through packet inspection, I observed how DNS queries resolve domain names, how TCP connections facilitate communication between devices, and how different protocols operate at various layers of the network stack. This analysis demonstrated the value of packet capture tools in understanding normal network activity and highlighted how network traffic analysis can support cybersecurity investigations and threat detection efforts.
+
+# Skills Demonstrated
+
+- Network Traffic Analysis
+- Packet Inspection
+- Wireshark Navigation and Filtering
+- DNS Traffic Analysis
+- TCP/IP Protocol Analysis
+- Source and Destination IP Identification
+- MAC Address Identification
+- Network Troubleshooting
+- Cybersecurity Investigation
+- Network Monitoring
 
 # Conclusion
 
